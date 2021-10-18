@@ -12,17 +12,17 @@ In this project you will create a simple 1 page dapp that can show ethereum bala
 
 Your task is to use React/typescript, [next.js](https://nextjs.org/docs/basic-features/typescript), the useDapp package, and styled-components to create an dapp that can :
 
-1  connect to a Ethereum Metamask wallet, 
+1. connect to a Ethereum Metamask wallet,
 
 2. display how much Ethereum is in said wallet, 
 
-3. take in inputs of amount of eth, and reciepient wallet to send a transaction of ethereum.
+3. send transactions of Ethereum by taking in the inputs of amount of eth, and reciepient wallet 
 
 We don't have strong preferences on the styling, If you don't have familiarity with existing styling or templates, minimal styling is perfectly fine as well.
 
 ## Primary Task and Optional Task
 
-As discussed above, your primary task is to produce an interface that has:
+As discussed above, your primary task is to produce an interface that can:
 
 1. connect to a ethereum wallet
 2. display how much ethereum is in said wallet,
@@ -30,7 +30,7 @@ As discussed above, your primary task is to produce an interface that has:
 
 If you have extra time available, feel free to show off your strengths! You can style the site, cache the most recent input, or implement any of the following features:
 
-- create validate transaction amount and wallet address
+- validate transaction amount and wallet addresses
 - Show Ethereum values in USD as well
 
 ## Using the starter repo;
@@ -38,7 +38,7 @@ If you have extra time available, feel free to show off your strengths! You can 
 Starting the repo is a easy as cloning the repository and running 
 `yarn`
 `yarn dev`
-there are some premade components and dependencies for your convenience but using them will probably require reading the usedapp documention
+there are some premade components and imports for your convenience but using the imports will probably require reading the usedapp documention
 
 ## Resources
 
