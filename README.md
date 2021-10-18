@@ -1,34 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Welcome friend thank you so much for taking the time to complete the Utopia Labs engineering take home assignment. This fun project will serve as an extra data point as we evaluate you for an engineering.
 
-## Getting Started
+When you fork this repository, you should make your fork private and share it with jasontheutopian, alextheutopian, and prycetheutopian on Github with an admin role. By forking this repository, you agree to keep the MIT License intact and assign the MIT License to your fork as well.
 
-First, run the development server:
+The challenge is to build out a simple ui interface to send an air drop of tokens from a gnosis safe to multiple different addresses.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Project Description:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+In this project you will create a simple 1 page dapp that can show ethereum balances and send transactions. 
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Your task is to use React/typescript, [next.js](https://nextjs.org/docs/basic-features/typescript), the useDapp package, and styled-components to create an dapp that can :
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+1  connect to a Ethereum Metamask wallet, 
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+2. display how much Ethereum is in said wallet, 
 
-## Learn More
+3. take in inputs of amount of eth, and reciepient wallet to send a transaction of ethereum.
 
-To learn more about Next.js, take a look at the following resources:
+We don't have strong preferences on the styling, If you don't have familiarity with existing styling or templates, minimal styling is perfectly fine as well.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Primary Task and Optional Task
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+As discussed above, your primary task is to produce an interface that has:
 
-## Deploy on Vercel
+1. connect to a ethereum wallet
+2. display how much ethereum is in said wallet,
+3. take in inputs of amount of eth, and reciepient wallet to send a transaction of ethereum.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+If you have extra time available, feel free to show off your strengths! You can style the site, cache the most recent input, or implement any of the following features:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- create validate transaction amount and wallet address
+- Show Ethereum values in USD as well
+
+## Using the starter repo;
+
+Starting the repo is a easy as cloning the repository and running 
+`yarn`
+`yarn dev`
+there are some premade components and dependencies for your convenience but using them will probably require reading the usedapp documention
+
+## Resources
+
+Helpful Resources
+
+To query the Ethereum blockchain for an ETH wallet balance, you will want to probaly use the [usedapp](https://usedapp.readthedocs.io/en/latest/getting-started.html#ether-balance) react library. You will need a gateway to access the Ethereum blockchain.
+
+The Cloudflare Ethereum Gateway. This does not require any API key.
+An [Infura.io](http://infura.io/) gateway. This does require a free API key. The network you'll want is "mainnet".
+If you also need help on the next js side of things checkout [https://nextjs.org/docs/basic-features/typescript](https://nextjs.org/docs/basic-features/typescript)
+
+the React state hook will probably helpful for some of the assignment [https://reactjs.org/docs/hooks-state.html](https://reactjs.org/docs/hooks-state.html)
