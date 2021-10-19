@@ -10,27 +10,21 @@ The challenge is to build out a simple ui interface to send an air drop of token
 
 In this project you will create a simple 1 page dapp that can show ethereum balances and send transactions. 
 
-Your task is to use React/typescript, [next.js](https://nextjs.org/docs/basic-features/typescript), the useDapp package, and styled-components to create an dapp that can :
+Your task is to use React/TypeScript, [Next.js](https://nextjs.org/docs/basic-features/typescript), the [useDapp](https://usedapp.readthedocs.io/en/latest/) package, and styled-components to create an dapp that can :
 
-1. connect to a Ethereum Metamask wallet,
+1. Connect to a Ethereum Metamask wallet.
 
-2. display how much Ethereum is in said wallet, 
+2. Display your Ethereum balance.
 
-3. send transactions of Ethereum by taking in the inputs of amount of eth, and reciepient wallet 
+3. Send a transaction of "x" ETH where x is a user-defined input.
 
-We don't have strong preferences on the styling, If you don't have familiarity with existing styling or templates, minimal styling is perfectly fine as well.
+It is up to your discretion for how to style the app. We just ask that you use styled-components and think of building re-usable, well-structured components. Minimal styling is okay, but if you are a CSS wizard, this is your opportunity to showcase it!
 
-## Primary Task and Optional Task
-
-As discussed above, your primary task is to produce an interface that can:
-
-1. connect to a ethereum wallet
-2. display how much ethereum is in said wallet,
-3. take in inputs of amount of eth, and reciepient wallet to send a transaction of ethereum.
+## Optional Task
 
 If you have extra time available, feel free to show off your strengths! You can style the site, cache the most recent input, or implement any of the following features:
 
-- validate transaction amount and wallet addresses
+- Show the last N transactions of that address
 - Show Ethereum values in USD as well
 
 ## Using the starter repo;
@@ -40,14 +34,7 @@ Starting the repo is a easy as cloning the repository and running
 `yarn dev`
 there are some premade components and imports for your convenience but using the imports will probably require reading the usedapp documention
 
-## Resources
+## Note
 
-Helpful Resources
+You should be working on the Rinkeby Test Network. This is the same as interacting with Ethereum, however, the balances will all be test amounts. To get a test amount of Ethereum, you can visit https://faucet.rinkeby.io/. If you have problems with getting fake Rinkeby, email pryce@utopialabs.com with your Rinkeby wallet address and he will send you some Rinkeby ETH.
 
-To query the Ethereum blockchain for an ETH wallet balance, you will want to probaly use the [usedapp](https://usedapp.readthedocs.io/en/latest/getting-started.html#ether-balance) react library. You will need a gateway to access the Ethereum blockchain.
-
-The Cloudflare Ethereum Gateway. This does not require any API key.
-An [Infura.io](http://infura.io/) gateway. This does require a free API key. The network you'll want is "mainnet".
-If you also need help on the next js side of things checkout [https://nextjs.org/docs/basic-features/typescript](https://nextjs.org/docs/basic-features/typescript)
-
-the React state hook will probably helpful for some of the assignment [https://reactjs.org/docs/hooks-state.html](https://reactjs.org/docs/hooks-state.html)
