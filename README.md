@@ -38,3 +38,6 @@ there are some premade components and imports for your convenience but using the
 
 You should be working on the Rinkeby Test Network. This is the same as interacting with Ethereum, however, the balances will all be test amounts. To get a test amount of Ethereum, you can visit https://faucet.rinkeby.io/. If you have problems with getting fake Rinkeby, email pryce@utopialabs.com with your Rinkeby wallet address and he will send you some Rinkeby ETH.
 
+## Submission
+
+You can submit your finished repo to pryce@utopialabs.com. 
