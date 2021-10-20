@@ -1,8 +1,3 @@
-import styled from "styled-components";
-import { formatEther, parseEther } from "@ethersproject/units";
-import { useEtherBalance, useEthers, useSendTransaction } from "@usedapp/core";
-import { useEffect, useState } from "react";
-import head from "next/head";
 import { AccountButton } from '../components/account/AccountButton'
 import { Container, MainContent, Section, SectionRow } from './shared/headings'
 import { SendEthForm } from './account/SendEthForm'

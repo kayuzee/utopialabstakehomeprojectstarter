@@ -89,6 +89,7 @@ export const SendEthForm = () => {
         </Label>
       </LabelRow>
       <InputComponent />
+      <br></br>
       </>
    </ContentBlock>
   )

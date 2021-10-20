@@ -9,6 +9,7 @@ export const Text = styled.p`
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
+  color:white;
 `
 
 export const TextInline = styled.span`
