@@ -11,9 +11,6 @@ Here is a preview:
 
 ## Requirements:
 
-In this project you will create a simple 1 page dapp that can show ethereum balances and send transactions. 
-
-Your task is to use React/TypeScript, [Next.js](https://nextjs.org/docs/basic-features/typescript), the [useDapp](https://usedapp.readthedocs.io/en/latest/) package, and styled-components to create an dapp that can :
 
 [x] Connect to a Ethereum Metamask wallet.
 
