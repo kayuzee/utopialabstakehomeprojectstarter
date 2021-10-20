@@ -32,7 +32,7 @@ export const Colors = {
   }
   
   export const Gradients = {
-    bodyBackground: `linear-gradient(180deg, ${Colors.Yellow[100]}, ${Colors.White})`,
+    bodyBackground: `linear-gradient(to right, #b92b27, #1565c0);`,
   }
   
   export const Transitions = {
