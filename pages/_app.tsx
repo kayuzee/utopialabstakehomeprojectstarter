@@ -1,9 +1,12 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { ChainId, DAppProvider } from "@usedapp/core";
+import { Redirect, Route, Switch } from 'react-router'
 import { AccountButton } from "../components/account/AccountButton";
-import { SendEthForm } from "../components/account/SendEthForm";
+import SendTransaction from "../components/SendTransaction"
 import { TopBar } from "../components/TopBar";
+import { BrowserRouter } from 'react-router-dom';
+import {Balance} from '../components/Balance'
 
 const config = {
   readOnlyChainId: ChainId.Mainnet,
@@ -17,9 +20,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     
     <DAppProvider config={config}>
-      <AccountButton />
-      <SendEthForm/>
-      <Component {...pageProps} />
+      
+      <SendTransaction/>
+      
     </DAppProvider>
   );
 }
