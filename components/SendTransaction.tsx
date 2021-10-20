@@ -1,8 +1,9 @@
-import styled from "styled-components";
-import { formatEther, parseEther } from "@ethersproject/units";
-import { useEtherBalance, useEthers, useSendTransaction } from "@usedapp/core";
-import { useEffect, useState } from "react";
-import head from "next/head";
+import { AccountButton } from '../components/account/AccountButton'
+import { Container, MainContent, Section, SectionRow } from './shared/headings'
+import { SendEthForm } from './account/SendEthForm'
+import { Title } from './shared/typography'
+
+
 
 const SendTransaction: React.FC = () => {
   //implement logic to display address of logged in wallet
@@ -14,10 +15,17 @@ const SendTransaction: React.FC = () => {
   const handleClick = () => {};
 
   return (
-    <>
-      {" "}
-      <div></div>{" "}
-    </>
+    <MainContent>
+    <Container>
+      <Section>
+        <SectionRow>
+          <Title>Send Ether</Title>
+          <AccountButton />
+        </SectionRow>
+        <SendEthForm />
+      </Section>
+    </Container>
+  </MainContent>
   );
 };
 
