@@ -1,6 +1,9 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { ChainId, DAppProvider } from "@usedapp/core";
+import { AccountButton } from "../components/account/AccountButton";
+import { SendEthForm } from "../components/account/SendEthForm";
+import { TopBar } from "../components/TopBar";
 
 const config = {
   readOnlyChainId: ChainId.Mainnet,
@@ -12,7 +15,10 @@ const config = {
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
+    
     <DAppProvider config={config}>
+      <AccountButton />
+      <SendEthForm/>
       <Component {...pageProps} />
     </DAppProvider>
   );
